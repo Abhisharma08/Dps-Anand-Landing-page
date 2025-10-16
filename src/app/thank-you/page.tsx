@@ -6,6 +6,10 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 
+// This tells Next.js to always render this page dynamically.
+// It prevents the build error with `useSearchParams` during prerendering.
+export const dynamic = 'force-dynamic';
+
 function ThankYouContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -13,15 +17,12 @@ function ThankYouContent() {
   const childName = searchParams.get('childName');
 
   useEffect(() => {
-    // If the names are not in the query params, redirect to home page.
-    // This provides basic protection against direct access.
     if (!parentName || !childName) {
       router.replace('/');
     }
   }, [parentName, childName, router]);
 
   if (!parentName || !childName) {
-    // Render nothing or a loading state while redirecting
     return null;
   }
 
