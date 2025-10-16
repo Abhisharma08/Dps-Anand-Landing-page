@@ -1,25 +1,6 @@
-const steps = [
-  {
-    number: '1',
-    title: 'Submit Enquiry',
-    description: 'Fill the form to register your interest and receive our brochure.',
-  },
-  {
-    number: '2',
-    title: 'Introduction Session',
-    description: 'Attend a scheduled session with our academic team with your child.',
-  },
-  {
-    number: '3',
-    title: 'Document Submission',
-    description: 'Complete the submission of all required documents for verification.',
-  },
-  {
-    number: '4',
-    title: 'Admission Offer',
-    description: 'Receive the official offer and join the DPS Anand family.',
-  },
-];
+import content from '@/lib/content.json';
+
+const { admissionSteps } = content;
 
 export default function AdmissionProcessSection() {
   return (
@@ -31,7 +12,7 @@ export default function AdmissionProcessSection() {
         <div className="relative max-w-5xl mx-auto">
           <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-border -translate-y-1/2" aria-hidden="true"></div>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-12">
-            {steps.map((step, index) => (
+            {admissionSteps.map((step, index) => (
               <div key={index} className="relative text-center">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full bg-background border-2 border-primary text-primary mx-auto mb-4 text-2xl font-bold shadow-md">
                   {step.number}

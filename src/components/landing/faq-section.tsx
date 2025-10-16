@@ -1,23 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import content from '@/lib/content.json';
 
-const faqs = [
-  {
-    question: 'What is the student-to-teacher ratio?',
-    answer: 'We maintain a favorable student-to-teacher ratio of 25:1 to ensure personalized attention and effective learning for every child.',
-  },
-  {
-    question: 'What curriculum do you follow?',
-    answer: 'We are affiliated with the Central Board of Secondary Education (CBSE), New Delhi, and integrate modern, inquiry-based teaching methodologies to foster a love for learning.',
-  },
-  {
-    question: 'Do you provide transportation services?',
-    answer: 'Yes, we offer a safe and secure bus transportation service covering all major routes in the city. All buses are GPS-enabled and have trained staff on board.',
-  },
-  {
-    question: 'What are the school timings?',
-    answer: 'The school operates from 8:00 AM to 2:30 PM, Monday to Friday. Optional after-school activities are available until 4:00 PM.',
-  }
-];
+const { faqs } = content;
 
 export default function FaqSection() {
   return (

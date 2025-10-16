@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from 'react';
@@ -6,7 +7,6 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Loader2 } from 'lucide-react';
-import { generateDigitalBrochure, GenerateDigitalBrochureInput } from '@/ai/flows/generate-digital-brochure';
 import { useToast } from "@/hooks/use-toast";
 import { submitStep1, submitStep2 } from '@/app/actions/hubspot';
 import { event as gtmEvent } from '@/lib/gtm';
@@ -57,7 +57,7 @@ export function InquiryForm() {
           phone: values.mobileNumber,
         });
 
-        if (!result.success) {
+        if (process.env.NODE_ENV === 'development' && !result.success) {
             toast({
                 title: "HubSpot Sync Failed",
                 description: result.message,
@@ -65,7 +65,7 @@ export function InquiryForm() {
             });
         }
 
-        // Fire GTM event for step 1 completion
+        // Fire GTM event for step 1 completion (conversion)
         gtmEvent({
           eventName: 'form_step1_complete',
           email: values.email,
@@ -95,42 +95,16 @@ export function InquiryForm() {
         grade_applying_for: values.gradeApplyingFor,
       });
 
-      if (!result.success) {
+      if (process.env.NODE_ENV === 'development' && !result.success) {
         toast({
             title: "HubSpot Sync Failed",
             description: result.message,
             variant: "destructive"
         });
       }
-
-      // Generate brochure
-      const input: GenerateDigitalBrochureInput = {
-        parentName: values.parentName,
-        email: values.email,
-        mobileNumber: values.mobileNumber,
-        childName: values.childName,
-        gradeApplyingFor: values.gradeApplyingFor,
-      };
       
-      // We don't await this so the user is redirected faster
-      generateDigitalBrochure(input).then(result => {
-        const content = result.brochureContent;
-        const blob = new Blob([content], { type: 'text/html' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `DPS-Anand-Brochure-${values.childName}.html`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-      }).catch(e => {
-        console.error("Failed to generate brochure in background", e);
-        // Silently fail, main flow already succeeded.
-      });
-
       // Redirect to thank you page
-      router.push(`/thank-you?parentName=${encodeURIComponent(values.parentName)}&childName=${encodeURIComponent(values.childName)}`);
+      router.push('/thank-you');
 
     } catch (e: any) {
       console.error(e);
@@ -139,7 +113,8 @@ export function InquiryForm() {
         description: e.message || "Failed to save details. Please try again later.",
         variant: "destructive"
       });
-      setLoading(false); // only set loading to false if there's an error and we are not redirecting
+    } finally {
+      setLoading(false);
     }
   }
 

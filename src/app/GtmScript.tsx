@@ -4,8 +4,9 @@ import { pageview } from "@/lib/gtm";
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 import { useEffect } from "react";
+import { Suspense } from "react";
 
-export default function GtmScript() {
+function GtmScriptContent() {
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -45,4 +46,12 @@ export default function GtmScript() {
       />
     </>
   );
+}
+
+export default function GtmScript() {
+  return (
+    <Suspense>
+      <GtmScriptContent />
+    </Suspense>
+  )
 }

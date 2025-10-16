@@ -1,23 +1,14 @@
 import { BrainCircuit, HeartHandshake, Users } from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import content from '@/lib/content.json';
 
-const features = [
-  {
-    icon: <BrainCircuit className="h-10 w-10 text-primary" />,
-    title: 'Academic Excellence',
-    description: 'Our CBSE-affiliated curriculum fosters critical thinking, creativity, and a lifelong love for learning, preparing students for future success.',
-  },
-  {
-    icon: <HeartHandshake className="h-10 w-10 text-primary" />,
-    title: 'Holistic Development',
-    description: 'We focus on the complete growth of every child, balancing academics with robust programs in arts, sports, and leadership.',
-  },
-  {
-    icon: <Users className="h-10 w-10 text-primary" />,
-    title: 'World-Class Faculty',
-    description: 'Our passionate and experienced educators provide personalized attention in a child-friendly atmosphere to nurture each student\'s potential.',
-  },
-];
+const { whyChooseUsFeatures } = content;
+
+const icons: { [key: string]: React.ReactNode } = {
+  BrainCircuit: <BrainCircuit className="h-10 w-10 text-primary" />,
+  HeartHandshake: <HeartHandshake className="h-10 w-10 text-primary" />,
+  Users: <Users className="h-10 w-10 text-primary" />,
+};
 
 export default function WhyChooseUsSection() {
   return (
@@ -27,10 +18,10 @@ export default function WhyChooseUsSection() {
           <h2 className="text-3xl md:text-4xl font-bold font-headline">An Education That Inspires Excellence</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+          {whyChooseUsFeatures.map((feature, index) => (
             <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
               <CardHeader className="items-center gap-4">
-                {feature.icon}
+                {icons[feature.icon]}
                 <CardTitle className="font-headline">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>

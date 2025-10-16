@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
-import GtmScript from '@/components/GtmScript';
+import GtmScript from './GtmScript';
 
 export const metadata: Metadata = {
   title: 'DPS Anand Admissions',
@@ -19,9 +19,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
-        <GtmScript />
       </head>
       <body className="font-body antialiased">
+        <GtmScript />
         {children}
         <Toaster />
       </body>

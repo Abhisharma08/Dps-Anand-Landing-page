@@ -1,6 +1,6 @@
 # DPS Anand Admissions Landing Page
 
-This is a Next.js project for the DPS Anand admissions landing page.
+This is a Next.js project for the DPS Anand admissions landing page, built with Firebase Studio.
 
 ## Getting Started
 
@@ -71,17 +71,17 @@ This approach keeps all image assets organized and easy to update.
 
 This project uses environment variables for sensitive information and configuration. You will need to create a `.env` file in the root of the project and add the following variables:
 
-- `HUBSPOT_API_KEY`: Your API key for HubSpot integration. This is used to save contact information from the inquiry form.
-- `NEXT_PUBLIC_GTM_ID`: Your Google Tag Manager container ID. This is used for tracking analytics and form submission events.
+- **`HUBSPOT_API_KEY`**: Your HubSpot Private App Token. This is used to save contact information from the inquiry form. It should be a string starting with `pat-...`.
+- **`NEXT_PUBLIC_GTM_ID`**: Your Google Tag Manager container ID. This is used for tracking analytics and form submission events.
 
 Example `.env` file:
 
 ```
-HUBSPOT_API_KEY="your-hubspot-api-key-here"
+HUBSPOT_API_KEY="pat-na1-your-private-app-token"
 NEXT_PUBLIC_GTM_ID="GTM-XXXXXXX"
 ```
 
-**Note:** For the HubSpot integration to work, you must replace the placeholder with a valid API key.
+**Note:** For the HubSpot integration to work, you must create a Private App in your HubSpot account and use the generated token.
 
 ## AI-Powered Features
 
