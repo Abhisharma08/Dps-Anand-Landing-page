@@ -1,0 +1,33 @@
+"use client";
+
+import { Button } from '@/components/ui/button';
+
+export default function FinalCtaSection() {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">
+          Ready to Begin Your Journey with Us?
+        </h2>
+        <p className="max-w-2xl mx-auto text-lg text-slate-200 mb-8">
+          Fill out the form at the top of the page to get started with our simple admission process.
+        </p>
+        <Button
+          size="lg"
+          className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-8 py-6 rounded-full"
+          onClick={scrollToTop}
+        >
+          Go to Inquiry Form
+        </Button>
+      </div>
+    </section>
+  );
+}
