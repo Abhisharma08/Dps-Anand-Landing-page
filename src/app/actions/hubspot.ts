@@ -15,12 +15,14 @@ const step2Schema = z.object({
   grade_applying_for: z.string(),
 });
 
-const HUBSPOT_API_KEY = process.env.HUBSPOT_API_KEY || 'your-hubspot-api-key-here';
+const HUBSPOT_API_KEY = process.env.HUBSPOT_API_KEY || 'your-hubspot-private-app-token';
 
 // This function creates or updates a contact.
 async function upsertHubspotContact(email: string, propertiesToUpdate: { property: string; value: any }[]) {
-  if (HUBSPOT_API_KEY === 'your-hubspot-api-key-here' || !HUBSPOT_API_KEY) {
+  if (HUBSPOT_API_KEY === 'your-hubspot-private-app-token' || !HUBSPOT_API_KEY) {
     console.warn("HubSpot API Key is not set. Skipping contact sync.");
+    // In production, we don't want to block the user flow if the API key is missing.
+    // In development, this message is a helpful reminder.
     return { success: true, message: "Contact sync skipped (API key not set)." };
   }
 
@@ -55,7 +57,11 @@ async function upsertHubspotContact(email: string, propertiesToUpdate: { propert
     if (!searchResponse.ok) {
       const errorBody = await searchResponse.text();
       console.error('HubSpot Search API Error:', errorBody);
-      return { success: false, message: `Failed to search contact in HubSpot. Response: ${errorBody}` };
+      // Fail silently in production
+      return { 
+        success: process.env.NODE_ENV !== 'production', 
+        message: `Failed to search contact in HubSpot. Response: ${errorBody}` 
+      };
     }
 
     const searchData = await searchResponse.json();
@@ -77,11 +83,11 @@ async function upsertHubspotContact(email: string, propertiesToUpdate: { propert
         return { success: true, message: 'Contact updated successfully.' };
       } else {
         const errorBody = await updateResponse.text();
-        if (process.env.NODE_ENV === 'development') {
-          console.error('HubSpot Update API Error:', errorBody);
-          return { success: false, message: `Failed to update contact. Response: ${errorBody}` };
-        }
-        return { success: true, message: "Contact update failed silently." };
+        console.error('HubSpot Update API Error:', errorBody);
+        return { 
+          success: process.env.NODE_ENV !== 'production', 
+          message: `Failed to update contact. Response: ${errorBody}` 
+        };
       }
 
     } else {
@@ -99,20 +105,20 @@ async function upsertHubspotContact(email: string, propertiesToUpdate: { propert
         return { success: true, message: 'Contact created successfully.' };
       } else {
         const errorBody = await createResponse.text();
-        if (process.env.NODE_ENV === 'development') {
-          console.error('HubSpot Create API Error:', errorBody);
-          return { success: false, message: `Failed to create contact. Response: ${errorBody}` };
-        }
-        return { success: true, message: "Contact creation failed silently." };
+        console.error('HubSpot Create API Error:', errorBody);
+        return { 
+          success: process.env.NODE_ENV !== 'production', 
+          message: `Failed to create contact. Response: ${errorBody}` 
+        };
       }
     }
 
   } catch (error) {
     console.error('Error syncing HubSpot contact:', error);
-    if (process.env.NODE_ENV === 'development') {
-      return { success: false, message: 'An unexpected error occurred during contact sync.' };
-    }
-    return { success: true, message: "An unexpected error occurred but was handled silently."};
+    return { 
+      success: process.env.NODE_ENV !== 'production', 
+      message: 'An unexpected error occurred during contact sync.'
+    };
   }
 }
 
