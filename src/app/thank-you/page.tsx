@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useSearchParams, useRouter } from 'next/navigation';
@@ -6,10 +7,6 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 
-// This tells Next.js to always render this page dynamically.
-// It prevents the build error with `useSearchParams` during prerendering.
-export const dynamic = 'force-dynamic';
-
 function ThankYouContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -17,11 +14,13 @@ function ThankYouContent() {
   const childName = searchParams.get('childName');
 
   useEffect(() => {
+    // If the required parameters are missing, redirect to the homepage.
     if (!parentName || !childName) {
       router.replace('/');
     }
   }, [parentName, childName, router]);
 
+  // Don't render anything until the effect has run and validated the params.
   if (!parentName || !childName) {
     return null;
   }
@@ -42,11 +41,10 @@ function ThankYouContent() {
   );
 }
 
-
 export default function ThankYouPage() {
-    return (
-        <Suspense fallback={<div>Loading...</div>}>
-            <ThankYouContent />
-        </Suspense>
-    )
+  return (
+    <Suspense>
+      <ThankYouContent />
+    </Suspense>
+  );
 }
