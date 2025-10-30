@@ -9,13 +9,13 @@
     {
       "id": "cbse-logo",
       "description": "CBSE Logo",
-      "imageUrl": "https://picsum.photos/seed/cbse/150/50",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761801735/cbse-logo_v2umjf.png",
       "imageHint": "logo"
     },
     {
       "id": "dps-society-logo",
       "description": "Delhi Public School Society Logo",
-      "imageUrl": "https://picsum.photos/seed/dps-society/150/50",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761675354/Delhi-Public-School-Logo_sjmnhv.png",
       "imageHint": "logo"
     },
     {
@@ -30,52 +30,42 @@
       "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1760612807/logo-new_gmyxsk.png",
       "imageHint": "school logo"
     },
-    {
-      "id": "gallery-1",
-      "description": "Students in a classroom",
-      "imageUrl": "https://picsum.photos/seed/gallery1/600/400",
-      "imageHint": "students classroom"
-    },
+    
     {
       "id": "gallery-2",
       "description": "School library",
-      "imageUrl": "https://picsum.photos/seed/gallery2/600/400",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761802128/Library_2_e3lkhj.jpg",
       "imageHint": "school library"
     },
     {
       "id": "gallery-3",
       "description": "Students playing sports",
-      "imageUrl": "https://picsum.photos/seed/gallery3/600/400",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761676600/Basketball_1_hgpkus.jpg",
       "imageHint": "students sports"
     },
     {
       "id": "gallery-4",
       "description": "Science lab",
-      "imageUrl": "https://picsum.photos/seed/gallery4/600/400",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761675998/Science_Lab_mhy8rz.jpg",
       "imageHint": "science lab"
     },
-    {
-      "id": "gallery-5",
-      "description": "Art class",
-      "imageUrl": "https://picsum.photos/seed/gallery5/600/400",
-      "imageHint": "art class"
-    },
+   
     {
       "id": "gallery-6",
       "description": "School building",
-      "imageUrl": "https://picsum.photos/seed/gallery6/600/400",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761675780/School_building_2_rlpxet.jpg",
       "imageHint": "school building"
     },
     {
       "id": "gallery-7",
       "description": "Computer lab",
-      "imageUrl": "https://picsum.photos/seed/gallery7/600/400",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761677236/Computer_Lab_1_bk9dkp.jpg",
       "imageHint": "computer lab"
     },
     {
       "id": "gallery-8",
       "description": "Music room",
-      "imageUrl": "https://picsum.photos/seed/gallery8/600/400",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761802331/Music_room_z74wpg.jpg",
       "imageHint": "music room"
     },
     {
@@ -84,22 +74,17 @@
       "imageUrl": "https://picsum.photos/seed/gallery9/600/400",
       "imageHint": "school assembly"
     },
-    {
-      "id": "gallery-10",
-      "description": "Playground",
-      "imageUrl": "https://picsum.photos/seed/gallery10/600/400",
-      "imageHint": "playground"
-    },
+    
     {
       "id": "gallery-11",
       "description": "Cafeteria",
-      "imageUrl": "https://picsum.photos/seed/gallery11/600/400",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761676722/Cafeteria_yncuno.jpg",
       "imageHint": "school cafeteria"
     },
     {
       "id": "gallery-12",
       "description": "Annual function",
-      "imageUrl": "https://picsum.photos/seed/gallery12/600/400",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761677846/Annual_Function_3_a83nxa.jpg",
       "imageHint": "annual function"
     }
   ]
