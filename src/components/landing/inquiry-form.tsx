@@ -122,7 +122,7 @@ export function InquiryForm() {
     <>
       <Card className="bg-background/80 backdrop-blur-sm border-gray-400 text-foreground shadow-2xl">
         <CardHeader>
-          <CardTitle className="text-2xl font-bold text-center">Get Your Information Kit</CardTitle>
+          <CardTitle className="text-2xl font-bold text-center">Enqire Now</CardTitle>
           <CardDescription className="text-center text-foreground/80">
             Fill out the form and our admissions counselor will contact you shortly.
           </CardDescription>

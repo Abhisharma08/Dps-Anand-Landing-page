@@ -1,33 +1,36 @@
 import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { InquiryForm } from '@/components/landing/inquiry-form';
 
 export default function HeroSection() {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
-
   return (
-    <section id="inquiry-form" className="relative w-full flex items-center justify-center text-white py-24 md:py-16">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          data-ai-hint={heroImage.imageHint}
-          priority
-        />
-      )}
+    <section
+      id="inquiry-form"
+      className="relative w-full flex items-center justify-center text-white py-24 md:py-16"
+    >
+      {/* 🔹 Background Image from Cloudinary */}
+      <Image
+        src="https://res.cloudinary.com/dtc8bbbco/image/upload/v1761804006/School_Building_7_yaz3aj.jpg"
+        alt="DPS Anand school building"
+        fill
+        className="object-cover"
+        priority
+      />
+
+      {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-black/70" />
+
       <div className="relative container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-headline tracking-tight">
-              Shape Your Child's Future at DPS Anand
+              Shape Your Child&apos;s Future at DPS Anand
             </h1>
             <p className="text-lg md:text-xl text-slate-200">
-              We provide an educational experience that enables students to become responsible, knowledgeable, and productive citizens in a global society. Admissions for the 2026-27 academic year are now open.
+              We provide an educational experience that enables students to become responsible, knowledgeable,
+              and productive citizens in a global society. Admissions for the 2026–27 academic year are now open.
             </p>
+
             <ul className="space-y-3 text-left self-center md:self-start text-lg">
               <li className="flex items-center gap-3">
                 <CheckCircle2 className="h-6 w-6 text-accent" />
@@ -43,6 +46,7 @@ export default function HeroSection() {
               </li>
             </ul>
           </div>
+
           <div className="w-full max-w-md mx-auto">
             <InquiryForm />
           </div>
