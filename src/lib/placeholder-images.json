@@ -34,7 +34,7 @@
     {
       "id": "gallery-2",
       "description": "School library",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761802128/Library_2_e3lkhj.jpg",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761932505/lib4_oz4ufd.jpg",
       "imageHint": "school library"
     },
     {
@@ -46,14 +46,14 @@
     {
       "id": "gallery-4",
       "description": "Science lab",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761675998/Science_Lab_mhy8rz.jpg",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761932857/BIOLAB_uaaqfl.jpg",
       "imageHint": "science lab"
     },
    
     {
       "id": "gallery-6",
       "description": "School building",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761675780/School_building_2_rlpxet.jpg",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761933271/7B1A4513_d3ivty.jpg",
       "imageHint": "school building"
     },
     {
@@ -65,13 +65,13 @@
     {
       "id": "gallery-8",
       "description": "Music room",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761802331/Music_room_z74wpg.jpg",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761933367/music_room_dy2qx8.jpg",
       "imageHint": "music room"
     },
     {
       "id": "gallery-9",
       "description": "School assembly",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761677147/Assembly_2_xv5sx0.jpg",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761933673/Assembly_adlaul.jpg",
       "imageHint": "school assembly"
     },
     
@@ -84,7 +84,7 @@
     {
       "id": "gallery-12",
       "description": "Annual function",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761677846/Annual_Function_3_a83nxa.jpg",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761933954/014_auokpm.jpg",
       "imageHint": "annual function"
     }
   ]

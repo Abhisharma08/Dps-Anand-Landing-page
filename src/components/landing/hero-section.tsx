@@ -10,7 +10,7 @@ export default function HeroSection() {
     >
       {/* 🔹 Background Image from Cloudinary */}
       <Image
-        src="https://res.cloudinary.com/dtc8bbbco/image/upload/v1761804006/School_Building_7_yaz3aj.jpg"
+        src="https://res.cloudinary.com/dtc8bbbco/image/upload/v1761933083/DPSA_Aerial_View_y9vdgj.jpg"
         alt="DPS Anand school building"
         fill
         className="object-cover"
