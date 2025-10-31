@@ -15,7 +15,7 @@ export default function Header() {
               alt={logo.description}
               width={200}
               height={100}
-              className="object-contain bg-white rounded-md p-1"
+              className="object-contain bg-[#F7F7F7] rounded-md p-1"
               data-ai-hint={logo.imageHint}
             />
           )}
