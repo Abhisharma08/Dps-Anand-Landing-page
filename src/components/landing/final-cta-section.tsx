@@ -17,7 +17,7 @@ export default function FinalCtaSection() {
         <h2 className="text-3xl md:text-4xl font-bold font-headline mb-2">
           Ready to Begin Your Journey with Us?
           <h4 className="text-xl md:text-4xl font-bold font-headline mb-4">
-          Ready to Begin Your Journey with Us?
+          Admissions Open for 2026
         </h4>
         </h2>
         <p className="max-w-2xl mx-auto text-lg text-slate-200 mb-8">
