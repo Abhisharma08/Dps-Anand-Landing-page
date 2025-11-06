@@ -16,12 +16,9 @@ export default function FinalCtaSection() {
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold font-headline mb-2">
           Ready to Begin Your Journey with Us?
-          <h4 className="text-xl md:text-4xl font-bold font-headline mb-4">
-          Admissions Open for 2026
-        </h4>
         </h2>
         <p className="max-w-2xl mx-auto text-lg text-slate-200 mb-8">
-          Fill out the form at the top of the page to get started with our simple admission process.
+          Fill out the form at the top of the page to get started with our simple admission process for 2026.
         </p>
         <Button
           size="lg"
