@@ -120,7 +120,7 @@ export function InquiryForm() {
 
   return (
     <>
-      <Card className="bg-background/80 backdrop-blur-sm border-gray-400 text-foreground shadow-2xl">
+      <Card id="form-scrl" className="bg-background/80 backdrop-blur-sm border-gray-400 text-foreground shadow-2xl">
         <CardHeader>
           <CardTitle className="text-xl font-bold text-center">Enquire Now for Admission 2026</CardTitle>
           <CardDescription className="text-center text-foreground/80">
