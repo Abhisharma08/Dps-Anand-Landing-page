@@ -3,7 +3,7 @@
     {
       "id": "hero-background",
       "description": "A modern school campus with happy students",
-      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770724911/dps_ananad_opfyok.avif",
+      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770727979/WhatsApp_Image_2026-02-10_at_6.18.37_PM_apkztl.jpg",
       "imageHint": "school campus"
     },
     {
@@ -34,7 +34,7 @@
     {
       "id": "gallery-2",
       "description": "School library",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761932505/lib4_oz4ufd.jpg",
+      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770727982/WhatsApp_Image_2026-02-10_at_6.22.25_PM_qwfr9d.jpg",
       "imageHint": "school library"
     },
     {
@@ -46,7 +46,7 @@
     {
       "id": "gallery-4",
       "description": "Science lab",
-      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770724595/Computer_Lab_1-scaled_bxnwy7.jpg",
+      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770724645/Chemistry_Lab_1-scaled_z1xyis.jpg",
       "imageHint": "science lab"
     },
    
@@ -71,20 +71,20 @@
     {
       "id": "gallery-9",
       "description": "School assembly",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761933673/Assembly_adlaul.jpg",
+      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770727920/assembly_opyouv.jpg",
       "imageHint": "school assembly"
     },
     
     {
       "id": "gallery-11",
-      "description": "Cafeteria",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761676722/Cafeteria_yncuno.jpg",
-      "imageHint": "school cafeteria"
+      "description": "International Exposure and Trips",
+      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770728340/IMG_0605-scaled_ut2aoq.jpg",
+      "imageHint": "international exposure and trips"
     },
     {
       "id": "gallery-12",
       "description": "Annual function",
-      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1761933954/014_auokpm.jpg",
+      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770727980/WhatsApp_Image_2026-02-10_at_6.19.40_PM_upg825.jpg",
       "imageHint": "annual function"
     }
   ]

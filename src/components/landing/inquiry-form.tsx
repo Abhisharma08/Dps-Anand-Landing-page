@@ -139,7 +139,7 @@ export function InquiryForm() {
                       <FormItem>
                         <FormLabel>Parent's Full Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="e.g. Your Name" {...field} />
+                          <Input placeholder="Enter Your Name" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -152,7 +152,7 @@ export function InquiryForm() {
                       <FormItem>
                         <FormLabel>Email Address</FormLabel>
                         <FormControl>
-                          <Input type="email" placeholder="e.g. example@domain.com" {...field} />
+                          <Input type="email" placeholder="Enter Your Email" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -165,7 +165,7 @@ export function InquiryForm() {
                       <FormItem>
                         <FormLabel>Mobile Number</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="e.g. 9876543210" {...field} />
+                          <Input type="tel" placeholder="Enter Your Mobile No." {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
