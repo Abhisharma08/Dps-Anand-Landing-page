@@ -17,32 +17,35 @@ export default function HeroSection() {
         priority
       />
 
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/70" />
+      {/* Dark overlay with gradient for better premium look */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/70 to-black/50" />
 
       <div className="relative container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-headline tracking-tight">
-              Shape Your Child&apos;s Future at DPS Anand
+            <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold font-headline tracking-tight leading-tight">
+              Integrated JEE/NEET Program at DPS Anand
             </h1>
-            <p className="text-lg md:text-xl text-slate-200">
-              We provide an educational experience that enables students to become responsible, knowledgeable,
-              and productive citizens in a global society. Admissions for the 2026–27 academic year are now open.
+            <p className="text-base md:text-lg lg:text-xl text-slate-200">
+              At DPS Anand, CBSE academics integrate with guided JEE/NEET preparation. Learn from expert Physics Wallah faculty and experienced school teachers in one structured program. Admissions 2026–27 now open.
             </p>
 
-            <ul className="space-y-3 text-left self-center md:self-start text-lg">
-              <li className="flex items-center gap-3">
-                <CheckCircle2 className="h-6 w-6 text-accent" />
-                <span className="font-semibold">World-Class CBSE Curriculum</span>
+            <ul className="space-y-4 text-left self-center md:self-start text-lg mt-4 w-full max-w-lg">
+              <li className="flex items-center gap-4 bg-white/10 backdrop-blur-md px-5 py-3 rounded-xl border border-white/20 shadow-sm transition-transform hover:-translate-y-1">
+                <CheckCircle2 className="h-6 w-6 text-accent flex-shrink-0" />
+                <span className="font-semibold">Limited Seats – 50 for JEE | 50 for NEET</span>
               </li>
-              <li className="flex items-center gap-3">
-                <CheckCircle2 className="h-6 w-6 text-accent" />
-                <span className="font-semibold">Holistic Student Development</span>
+              <li className="flex items-center gap-4 bg-white/10 backdrop-blur-md px-5 py-3 rounded-xl border border-white/20 shadow-sm transition-transform hover:-translate-y-1">
+                <CheckCircle2 className="h-6 w-6 text-accent flex-shrink-0" />
+                <span className="font-semibold">Integrated Academic Planning</span>
               </li>
-              <li className="flex items-center gap-3">
-                <CheckCircle2 className="h-6 w-6 text-accent" />
-                <span className="font-semibold">Experienced & Nurturing Faculty</span>
+              <li className="flex items-center gap-4 bg-white/10 backdrop-blur-md px-5 py-3 rounded-xl border border-white/20 shadow-sm transition-transform hover:-translate-y-1">
+                <CheckCircle2 className="h-6 w-6 text-accent flex-shrink-0" />
+                <span className="font-semibold">Learn from Expert PW Faculty & Experienced School Teachers</span>
+              </li>
+              <li className="flex items-center gap-4 bg-white/10 backdrop-blur-md px-5 py-3 rounded-xl border border-white/20 shadow-sm transition-transform hover:-translate-y-1">
+                <CheckCircle2 className="h-6 w-6 text-accent flex-shrink-0" />
+                <span className="font-semibold">100% School Curriculum Covered</span>
               </li>
             </ul>
           </div>
