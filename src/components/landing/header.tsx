@@ -13,9 +13,9 @@ export default function Header() {
             <Image
               src={logo.imageUrl}
               alt={logo.description}
-              width={300}
-              height={70}
-              className="object-contain bg-[#ffffff] rounded-md"
+              width={200}
+              height={100}
+              className="object-contain bg-[#ffffff] rounded-md p-1"
               data-ai-hint={logo.imageHint}
             />
           )}

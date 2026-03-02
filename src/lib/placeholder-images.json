@@ -25,17 +25,12 @@
       "imageHint": "award logo"
     },
     {
-      "id": "pw-logo",
-      "description": "Physics Wallah Logo",
-      "imageUrl": "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/f10eb934-422b-448f-aa2c-157078acb032.webp",
-      "imageHint": "logo"
-    },
-    {
       "id": "dps-anand-logo",
       "description": "DPS Anand School Logo",
-      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1772182667/Dps_anand_logo-01_j1h5ms.png",
+      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1769576950/Untitled_design_15_os8id9.png",
       "imageHint": "school logo"
     },
+    
     {
       "id": "gallery-2",
       "description": "School library",
@@ -54,6 +49,7 @@
       "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770724645/Chemistry_Lab_1-scaled_z1xyis.jpg",
       "imageHint": "science lab"
     },
+   
     {
       "id": "gallery-6",
       "description": "School building",
@@ -78,6 +74,7 @@
       "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1770727920/assembly_opyouv.jpg",
       "imageHint": "school assembly"
     },
+    
     {
       "id": "gallery-11",
       "description": "International Exposure and Trips",

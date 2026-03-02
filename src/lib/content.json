@@ -23,20 +23,20 @@
   ],
   "faqs": [
     {
-      "question": "What is the Integrated JEE/NEET Program?",
-      "answer": "Integrated CBSE academics with structured JEE and NEET preparation."
+      "question": "What is the student-to-teacher ratio?",
+      "answer": "We maintain a favorable student-to-teacher ratio of 25:1 to ensure personalized attention and effective learning for every child."
     },
     {
-      "question": "Who teaches in this program?",
-      "answer": "Expert Physics Wallah faculty and experienced school teachers."
+      "question": "What curriculum do you follow?",
+      "answer": "We are affiliated with the Central Board of Secondary Education (CBSE), New Delhi, and integrate modern, inquiry-based teaching methodologies to foster a love for learning."
     },
     {
-      "question": "Is the full CBSE curriculum covered?",
-      "answer": "Yes, complete CBSE syllabus covered alongside competitive preparation."
+      "question": "Do you provide transportation services?",
+      "answer": "Yes, we offer a safe and secure bus transportation service covering all major routes in the city. All buses are GPS-enabled and have trained staff on board."
     },
     {
-      "question": "Are seats limited in this program?",
-      "answer": "Yes, only fifty seats available for each stream."
+      "question": "What are the school timings?",
+      "answer": "The school operates from 8:00 AM to 2:30 PM, Monday to Friday. Optional after-school activities are available until 4:00 PM."
     }
   ],
   "testimonials": [
@@ -48,18 +48,18 @@
   "whyChooseUsFeatures": [
     {
       "icon": "BrainCircuit",
-      "title": "Complete School Curriculum Coverage",
-      "description": "Our integrated program ensures full CBSE curriculum completion while systematically preparing students for JEE and NEET within the school framework."
+      "title": "Academic Excellence",
+      "description": "Our CBSE-affiliated curriculum fosters critical thinking, creativity, and a lifelong love for learning, preparing students for future success."
     },
     {
       "icon": "HeartHandshake",
-      "title": "Board & Competitive Preparation Together",
-      "description": "Academics and entrance preparation are seamlessly aligned in one coordinated plan, strengthening concepts without duplicating effort or increasing academic pressure."
+      "title": "Holistic Development",
+      "description": "We focus on the complete growth of every child, balancing academics with robust programs in arts, sports, and leadership."
     },
     {
       "icon": "Users",
-      "title": "More Self-Study, Less Stress",
-      "description": "With no relocation required and structured scheduling, students gain focused self-study time in a stable and supportive learning environment."
+      "title": "World-Class Faculty",
+      "description": "Our passionate and experienced educators provide personalized attention in a child-friendly atmosphere to nurture each student's potential."
     }
   ]
 }
