@@ -1,0 +1,65 @@
+{
+  "admissionSteps": [
+    {
+      "number": "1",
+      "title": "Submit Enquiry",
+      "description": "Fill the form to register your interest and receive our brochure."
+    },
+    {
+      "number": "2",
+      "title": "Introduction Session",
+      "description": "Attend a scheduled session with our academic team with your child."
+    },
+    {
+      "number": "3",
+      "title": "Document Submission",
+      "description": "Complete the submission of all required documents for verification."
+    },
+    {
+      "number": "4",
+      "title": "Admission Offer",
+      "description": "Receive the official offer and join the DPS Anand family."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the student-to-teacher ratio?",
+      "answer": "We maintain a favorable student-to-teacher ratio of 25:1 to ensure personalized attention and effective learning for every child."
+    },
+    {
+      "question": "What curriculum do you follow?",
+      "answer": "We are affiliated with the Central Board of Secondary Education (CBSE), New Delhi, and integrate modern, inquiry-based teaching methodologies to foster a love for learning."
+    },
+    {
+      "question": "Do you provide transportation services?",
+      "answer": "Yes, we offer a safe and secure bus transportation service covering all major routes in the city. All buses are GPS-enabled and have trained staff on board."
+    },
+    {
+      "question": "What are the school timings?",
+      "answer": "The school operates from 8:00 AM to 2:30 PM, Monday to Friday. Optional after-school activities are available until 4:00 PM."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Choosing DPS Anand was the best decision for our child. The school's focus on overall development and the supportive nature of the teachers is truly commendable. We've seen remarkable growth in our daughter.",
+      "author": "Anjali Sharma, Parent of a Grade 5 Student"
+    }
+  ],
+  "whyChooseUsFeatures": [
+    {
+      "icon": "BrainCircuit",
+      "title": "Academic Excellence",
+      "description": "Our CBSE-affiliated curriculum fosters critical thinking, creativity, and a lifelong love for learning, preparing students for future success."
+    },
+    {
+      "icon": "HeartHandshake",
+      "title": "Holistic Development",
+      "description": "We focus on the complete growth of every child, balancing academics with robust programs in arts, sports, and leadership."
+    },
+    {
+      "icon": "Users",
+      "title": "World-Class Faculty",
+      "description": "Our passionate and experienced educators provide personalized attention in a child-friendly atmosphere to nurture each student's potential."
+    }
+  ]
+}
